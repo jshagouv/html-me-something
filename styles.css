@@ -1,0 +1,56 @@
+@font-face {
+    font-family: "HomeSweetHome";
+    src: url(fonts/home-sweet-home.ttf) format("truetype");
+}
+
+body {
+    background-image: url(images/fabric.jpg);
+    /* opacity:0.5; */
+}
+#page-title {
+    font-family: HomeSweetHome, fantasy;
+    font-size:3em;
+    text-align: center;
+    border-style:dashed;
+}
+
+nav ul li {
+	display: inline-block;
+	margin-right: 1em;
+}
+main img {
+    height:25%;
+    width:25%;
+}
+
+h1 {
+    font-size: 2rem;
+}
+h2 {
+    font-size: 1.5rem;
+}
+
+article address {
+    font-size: 0.75em;
+}
+
+code {
+    color:#962828;
+}
+#learned-span {
+    background-color: #e5f720;
+}
+
+footer {
+    font-size: 0.75rem;
+}
+
+small {
+    font-size: 0.75em;
+}
+
+footer ul li {
+	display: inline-block;
+	margin-right: 0.5em;
+    margin-left: 0em;
+}
