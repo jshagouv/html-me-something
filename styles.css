@@ -3,9 +3,23 @@
     src: url(fonts/home-sweet-home.ttf) format("truetype");
 }
 
-body {
-    background-image: url(images/fabric.jpg);
-    /* opacity:0.5; */
+/*The following two div.background settings allow for an image to be set as the background for the page AND change that image's opacity without also affecting the opacity of all the other elements*/
+div.background {
+    height:100%;
+    width:100%;
+
+}
+div.background::after{
+    content:"";
+    background-image: url("images/fabric.jpg");
+    background-color:#fffff0;
+    opacity: 0.18;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    position:fixed;
+    z-index: -1;
 }
 #page-title {
     font-family: HomeSweetHome, fantasy;
