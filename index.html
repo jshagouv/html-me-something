@@ -24,7 +24,9 @@ many of the key tags and explains those tags as part of the content-->
         <!--w3schools recommends all pages have a meta viewport element-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta charset="utf-8" />
-        <link />
+        <!-- first link to normalize style sheet, then sheet specific for this page -->
+        <link rel="stylesheet" type="text/css" href="normalize.css" />
+        <link rel="stylesheet" type="text/css" href="styles.css" />
         <script></script>
         <!--base tag allows me to set default paths and targets for all relative URLs on document-->
         <!--when I had the base tag active, nav refs within the page opened the images folder instead<base href="images/" target="_blank" /> Is there a way to have the base tag AND nav refs?-->
@@ -32,13 +34,21 @@ many of the key tags and explains those tags as part of the content-->
     <body>
         <header>
             <!--The header element should be the first element after the body tag and should include navigation elements, logos, etc-->
-            <img src="images/myprofilepic.png"
-                 alt="Jill Shaddy-Gouvion"/>
+            <h1 id="page-title">My HTML & CSS Sampler</h1>
+            <figure>
+                <!--DJS pic native w x h: 180 x 181 px-->
+                <img src="images/myprofilepic.png"
+                     alt="Jill Shaddy-Gouvion"/>
+                <figcaption>
+                    Me in a St. Louis cafe&#769;, 2009.
+                </figcaption>
+            </figure>
+
             <nav id="toc">
             <!--For now the TOC is static and created manually. I breifly noted a webpage (https://css-tricks.com/automatic-table-of-contents/) that mentioned it can be created dynamically via javascript; once I get there, that would be something to change-->
                 <ul>
                     <li><a href="#purpose">What am I doing?</a></li>
-                    <li><a href="#sampler-history">A (Very) Brief History of Samplers</a></li>
+                    <li><a href="#sampler-history">An Abridged History of Samplers</a></li>
                     <li><a href="#div-span">Span and Div Tags</a></li>
                     <li><a href="#resources">Resources</a></li>
                 </ul>
@@ -52,13 +62,14 @@ many of the key tags and explains those tags as part of the content-->
             </p>
             <article>
                 <!--An article element should be independent content that can stand on its own if removed from the context of the page.-->
-                <h2 id="sampler-history">A (Very) Brief History of Samplers</h2>
+                <h2 id="sampler-history">An Abridged History of Samplers</h2>
                 <div id="peru-sampler">
                     <p>
-                        The earliest sampler...is a spot sampler...of the Nazca culture in Peru formerly in the Museum of Primitive Art, New York City. It is estimated to date from ca. 200 BCE –300 CE[!]
+                        The earliest sampler...is a spot sampler...of the Nazca culture in Peru formerly in the Museum of Primitive Art, New York City. It is estimated to date from ca. 200 BCE–300 CE.
                     </p>
                     <a href="http://www.metmuseum.org/art/collection/search/313093?rpp=20&pg=1&ft=206.889&pos=1"
                     target="_blank">
+                    <!--peru img native w x h: 1367 x 1947 px-->
                         <img src="images/peru-sampler.jpg"
                         alt="First known sampler, from Nazca culture in Peru."
                         id="peru-sampler-img"/>
@@ -79,12 +90,13 @@ many of the key tags and explains those tags as part of the content-->
                     </p>
                     <a href="http://collections.vam.ac.uk/item/O46183/sampler-bostocke-jane/"
                     target="_blank">
+                    <!--bostocke img native w x h: 525 x 600 px-->
                         <img src="images/bostoke-sampler.jpg"
                         alt="Jane Bostocke sampler, 1598"
                         id="bostocke-sampler" />
                     </a>
                 </aside>
-                <address id="article-addy">
+                <address>
                     <!--An address tag within an article element provides address for the article author-->
                     Text excerpts copied from
                     <a href="https://en.wikipedia.org/wiki/Sampler_(needlework)">
@@ -96,17 +108,17 @@ many of the key tags and explains those tags as part of the content-->
                 So it is in the spirit of the samplers of 200-300 years ago that I start this task, a beginner's sampler for the 21st century. But perhaps, with practice and experience, this may turn into a tech-version of the samplers from 500 years ago, a place to save more advanced techniques for future reference.
             </p>
             <div id="div-span">
-                <h1>Span and Div Tags</h1>
+                <h2>Span, Div, and P Tags</h2>
                 <p>
-                    I am still getting the hang of <code>&#60;span&#62;</code> and <code>&#60;div&#62;</code> tags. At first the <code>&#60;span&#62;</code> tag <em>really</em> confused me as it wasn't immediately evident what it does. Then, after the introduction to CSS, things became <span>much clearer</span>!
+                    I am still getting the hang of <code>&#60;span&#62;</code> and <code>&#60;div&#62;</code> tags. At first, the <code>&#60;span&#62;</code> tag <em>really</em> confused me as it wasn't immediately evident what it does. Then, after the introduction to CSS, things became <span id="learned-span">much clearer</span>!
                 </p>
                 <p>
                     I am still figuring out when it is best to use <code>&#60;div&#62;</code> tags and how they differ from <code>&#60;p&#62;</code> tags.
                 </p>
             </div>
-            <h1 id="resources">Resources</h1>
+            <h2 id="resources">Resources</h2>
                 <p>
-                    Beyond <a href="http://learn.launchcode.org">LC 101</a> course materials, the following sites are of great assistance in learning to put an HTML/CSS page together:
+                    Beyond <a href="http://learn.launchcode.org">LC 101</a> course materials, the following sites were of great assistance in learning to put this HTML/CSS page together (some of which I stumbled across before I noticed they were also mentioned in the course materials):
                 </p>
                 <ul id="ul-resources">
                     <li>
@@ -126,11 +138,9 @@ many of the key tags and explains those tags as part of the content-->
         <footer>
             <p>
                 Created for:
-                <ul id="ul-footer">
-                    <li>
-                        <b>Course</b>: Fall 2016 LC101</li>
-                    <li>
-                        <b>Assignment</b>: Unit 2 HTML Me Something</li>
+                <ul>
+                    <li><b>Course</b>: Fall 2016 LC101</li>
+                    <li><b>Assignment</b>: Unit 2 HTML Me Something</li>
                 </ul>
             </p>
             <small>
