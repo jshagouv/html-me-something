@@ -11,6 +11,7 @@ html {
     /*I want a font that is more in keeping with the specialized font used for the titles and header so I have chosen Optima, a lightly serifed font with a bit more contemporary flair.*/
     font-family: Optima;
     font-size: 18px;
+    margin: 1rem;
 }
 
 /*The following two div.background settings allow for an image to be set as the background for the page AND change that image's opacity without also affecting the opacity of all the other elements*/
@@ -33,10 +34,13 @@ div.page-wrapper::after{
 .page-title {
     font-family: KingthingsXstitch, Optima;
     font-size:3em;
+    color:#b12b2b;
     text-align: center;
     border-style:dashed;
-    border-color:#A0A0A0;
+    border-color:#000000;
+    border-width: thin;
     border-radius: 10px;
+    margin-top:0;
 }
 
 .title-fig {
@@ -45,6 +49,19 @@ div.page-wrapper::after{
     float:left;
     margin-top: 0;
 }
+.bold {
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color:#2A5DB0 /*Gmail link blue*/
+}
+
+a:visited {
+    color:#4c2bb1;
+}
+
 nav ul {
     list-style-type: none;
     padding:0;
@@ -58,7 +75,6 @@ nav li a {
     font-family: KingthingsXstitch;
     font-weight: bold;
     color:#000080;
-    text-decoration: none;
     height:1.75em;
     padding-top: 0.6em;
 }
@@ -66,6 +82,9 @@ nav li a:hover {
     border-color:#000080;
     color:#000080;
     background-color: #fffff9
+}
+nav li a:visited {
+    color:#000080;
 }
 
 main {
@@ -93,20 +112,31 @@ article address {
 code {
     color:#962828;
 }
+
+#t-master {
+    color:red;
+}
+
 #learned-span {
     background-color: #e5f720;
 }
 
+#ul-resources {
+    list-style-type: square;
+}
+
 footer {
     font-size: 0.75rem;
+    margin-bottom: 20px;
 }
 
 small {
-    font-size: 0.75em;
+    font-size: 0.8em;
 }
 
+footer p {
+
+}
 footer ul li {
-	display: inline-block;
-	margin-right: 0.5em;
-    margin-left: 0em;
+    list-style-type: none;
 }
