@@ -1,9 +1,4 @@
 @font-face {
-    font-family: "HomeSweetHome";
-    src: url(fonts/home-sweet-home.ttf) format("truetype");
-}
-
-@font-face {
     font-family: "Optima";
     src:url(fonts/Optima.ttc) format("truetype");
 }
@@ -13,17 +8,17 @@
     src:url(fonts/Kingthings_Xstitch.ttf) format("truetype");
 }
 html {
-    /*I want a font that is more in keeping with the specialize font used for the titles and header so I have chosen Optima, a serif font with a bit more modern flair.*/
+    /*I want a font that is more in keeping with the specialized font used for the titles and header so I have chosen Optima, a lightly serifed font with a bit more modern flair.*/
     font-family: Optima;
     font-size: 18px;
 }
 
 /*The following two div.background settings allow for an image to be set as the background for the page AND change that image's opacity without also affecting the opacity of all the other elements*/
-div.background {
+div.page-wrapper{
     height:100%;
     width:100%;
 }
-div.background::after{
+div.page-wrapper::after{
     content:"";
     background-image: url("images/fabric.jpg");
     background-color:#fffff0;
@@ -35,7 +30,7 @@ div.background::after{
     position:fixed;
     z-index: -1;
 }
-#page-title {
+.page-title {
     font-family: KingthingsXstitch, Optima;
     font-size:3em;
     text-align: center;

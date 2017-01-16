@@ -32,10 +32,10 @@ many of the key tags and explains those tags as part of the content-->
         <!--when I had the base tag active, nav refs within the page opened the images folder instead<base href="images/" target="_blank" /> Is there a way to have the base tag AND nav refs?-->
     </head>
     <body>
-        <div class="background">
+        <div class="page-wrapper">
         <header>
             <!--The header element should be the first element after the body tag and should include navigation elements, logos, etc-->
-            <h1 id="page-title">My HTML & CSS Sampler</h1>
+            <h1 class="page-title">My HTML & CSS Sampler</h1>
             <figure>
                 <!--DJS pic native w x h: 180 x 181 px-->
                 <img src="images/myprofilepic.png"
@@ -45,7 +45,7 @@ many of the key tags and explains those tags as part of the content-->
                 </figcaption>
             </figure>
 
-            <nav id="toc">
+            <nav class="page-nav">
             <!--For now the TOC is static and created manually. I breifly noted a webpage (https://css-tricks.com/automatic-table-of-contents/) that mentioned it can be created dynamically via javascript; once I get there, that would be something to change-->
                 <ul>
                     <li><a href="#purpose">What am I doing?</a></li>
@@ -153,6 +153,6 @@ many of the key tags and explains those tags as part of the content-->
             </small>
         </footer>
 
-    </div> <!--background-->
+    </div> <!--page-wrapper-->
     </body>
 </html>
