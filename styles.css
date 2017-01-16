@@ -105,6 +105,10 @@ h2 {
     font-size: 1.5rem;
 }
 
+article {
+    border-style: solid;
+}
+
 article address {
     font-size: 0.75em;
 }

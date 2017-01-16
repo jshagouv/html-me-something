@@ -27,9 +27,7 @@ many of the key tags and explains those tags as part of the content-->
         <!-- first link to normalize style sheet, then sheet specific for this page -->
         <link rel="stylesheet" type="text/css" href="normalize.css" />
         <link rel="stylesheet" type="text/css" href="styles.css" />
-        <script></script>
-        <!--base tag allows me to set default paths and targets for all relative URLs on document-->
-        <!--when I had the base tag active, nav refs within the page opened the images folder instead<base href="images/" target="_blank" /> Is there a way to have the base tag AND nav refs?-->
+        <!--<script></script>-->
     </head>
     <body>
         <div class="page-wrapper">
@@ -66,7 +64,7 @@ many of the key tags and explains those tags as part of the content-->
                 <!--An article element should be independent content that can stand on its own if removed from the context of the page.-->
                 <h2 id="sampler-history">An Abridged History of Samplers</h2>
                 <div id="peru-sampler">
-                    <p>
+                    <p id="hist-p1">
                         The earliest sampler...is a spot sampler...of the Nazca culture in Peru formerly in the Museum of Primitive Art, New York City. It is estimated to date from ca. 200 BCE–300 CE.
                     </p>
                     <a href="http://www.metmuseum.org/art/collection/search/313093?rpp=20&pg=1&ft=206.889&pos=1"
@@ -79,25 +77,22 @@ many of the key tags and explains those tags as part of the content-->
 
                 </div>
 
-                <p>
+                <p id="hist-p2">
                     The oldest surviving European samplers were made in the 16th and 17th centuries. As there were few pre-printed patterns available for needleworkers, a stitched model was needed. Whenever a needlewoman saw a new and interesting example of a stitching pattern, she would quickly sew a small sample of it onto a piece of cloth - her 'sampler'. The patterns were sewn randomly onto the fabric as a reference for future use, and the woman would collect extra stitches and patterns throughout her lifetime.
                 </p>
-                <p>
+                <p id="hist-p4">
+                    The earliest British dated surviving sampler...was made by Jane Bostocke who included her name and the date 1598 in the inscription.
+                </p>
+                <a href="http://collections.vam.ac.uk/item/O46183/sampler-bostocke-jane/"
+                target="_blank">
+                <!--bostocke img native w x h: 525 x 600 px-->
+                    <img src="images/bostoke-sampler.jpg"
+                    alt="Jane Bostocke sampler, 1598"
+                    id="bostocke-sampler" />
+                </a>
+                <p id="hist=p3">
                     Samplers were mainly school exercises during the 18th and 19th centuries, and were almost entirely worked in cross stitch... These samplers were stitched more to demonstrate knowledge than to preserve skill...and girls were taught the art from a young age.
                 </p>
-                <aside id="first-dated-sampler-sidebar">
-                    <!--One use for aside elements are as sidebar items in an article-->
-                    <p>
-                        The earliest British dated surviving sampler...was made by Jane Bostocke who included her name and the date 1598 in the inscription.
-                    </p>
-                    <a href="http://collections.vam.ac.uk/item/O46183/sampler-bostocke-jane/"
-                    target="_blank">
-                    <!--bostocke img native w x h: 525 x 600 px-->
-                        <img src="images/bostoke-sampler.jpg"
-                        alt="Jane Bostocke sampler, 1598"
-                        id="bostocke-sampler" />
-                    </a>
-                </aside>
                 <address>
                     <!--An address tag within an article element provides address for the article author-->
                     Text excerpts copied from
