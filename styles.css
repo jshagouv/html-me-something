@@ -48,6 +48,10 @@ div.page-wrapper::after{
     float:left;
     margin:1rem;
 }
+
+figcaption {
+    font-size: 0.75rem;
+}
 .bold {
     font-weight: bold;
 }
@@ -166,7 +170,8 @@ code {
 
 }
 
-#ul-resources {
+/*Not working at the moment... it had in a previous iteration*/
+.standard-ul {
     list-style-type: square;
 }
 
